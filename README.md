@@ -1,7 +1,7 @@
 platzi-badges
 ===================
 
-React Course from site [Platzi](https://platzi.com/)
+React Course by [Platzi](https://platzi.com/)
 ---------------------------------------------
 
 This a simple project, just following the instruction of the course for learn.<br />
