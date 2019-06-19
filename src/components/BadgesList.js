@@ -1,6 +1,6 @@
 import React from 'react';
 
-import tw_logo from "../images/twitter-logo.png";
+import twitter_logo from "../images/twitter-logo.png";
 
 import"../components/styles/BadgesList.css";
 
@@ -17,7 +17,7 @@ class BadgesList extends React.Component{
 								<br />
 								{badge.jobTitle}
 								<br />
-								<img src={tw_logo} className='tw__logo' />
+								<img src={twitter_logo} className='twitter_logo' />
 								<a href={"https://twitter.com/"+badge.twitter}>
                                     <span className='twitter__blue_font'>{badge.twitter}</span>
                                 </a>

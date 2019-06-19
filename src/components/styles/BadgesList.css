@@ -1,3 +1,7 @@
+.twitter_logo {
+	width: 25px;
+	height: 25px;
+}
 .Badge__section-name-list {
 	background: #ffffff;
 	box-shadow: 04px8px0rgba(0, 0, 0, 0.1);
@@ -17,8 +21,4 @@
 }
 .twitter__blue_font {
 	color: #38a1f3;
-}
-.tw__logo {
-	width: 25px;
-	height: 25px;
 }

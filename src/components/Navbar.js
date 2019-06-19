@@ -15,7 +15,7 @@ class Navbar extends React.Component{
                     </a>
                 </div>
             </div>
-        )
+        );
     }
 }
 
