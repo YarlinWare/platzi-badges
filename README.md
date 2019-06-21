@@ -32,3 +32,5 @@ Package Installed
 -----------------
 - React-Router<br />
     `npm install react-router-dom`
+- md5<br />
+    `npm install md5`
