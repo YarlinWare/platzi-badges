@@ -11,8 +11,11 @@ Deployment
 ----------
 1. Clone proyect (it assume you have previously installed git)<br />
     `git clone https://github.com/crscaballero/platzi-badges.git`
-2. Start proyect<br />
-    `cd platzi-badges`<br />
+2. Go to Proyect<br />
+    `cd platzi-badges`
+3. Update Packages<br />
+    `npm install`
+4. Start proyect<br />
     `npm start`
 
 Instructions (done to create it)
@@ -21,7 +24,7 @@ Instructions (done to create it)
     `npm install -g create-react-app`
 2. Create proyect<br />
     `create-react-app platzi-badges`
-3. Start proyect__
+3. Start proyect<br />
     `cd platzi-badges`<br />
     `npm start`
     
