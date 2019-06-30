@@ -3,16 +3,14 @@ import React from 'react';
 class BadgeForm extends React.Component{
 
     handleClick=(e)=>{
-        console.log("Button was clicked");
+        //console.log("Button was clicked");
     }
 
-    /*handleSubmit=(e)=>{
-        e.preventDefault();
-        console.log("Form was submitted");
-        console.log(this.state);
-    }*/
-
     render(){
+        if(this.props){
+            console.log(this.props);
+            //console.log(this.props.error.message);
+        }
         return(
             <div>
                 <h1>New Attendant</h1>
@@ -37,7 +35,12 @@ class BadgeForm extends React.Component{
                         <label>Twitter</label>
                         <input onChange={this.props.onChange} className="form-control" type="text" name="twitter" value={this.props.formValues.twitter} placeholder="Twitter" />
                     </div>
-                    <button onClick={this.handleClick} className="btn btn-primary" >Save</button>
+                    <button onClick={this.handleClick} className="btn btn-primary" >
+                        Save
+                    </button>
+                    {this.props.error && (
+                        <p className="text-danger">{this.props.error.message}</p>
+                    )}
                 </form>
             </div>
         );
