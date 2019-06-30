@@ -7,10 +7,6 @@ class BadgeForm extends React.Component{
     }
 
     render(){
-        if(this.props){
-            console.log(this.props);
-            //console.log(this.props.error.message);
-        }
         return(
             <div>
                 <form onSubmit={this.props.onSubmit}>
