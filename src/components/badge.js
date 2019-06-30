@@ -2,6 +2,7 @@ import React from 'react';
 
 import "./styles/Badge.css";
 import confLogo from '../images/badge-header.svg';
+import twitter_logo from "../images/twitter-logo.png";
 import Gravatar from './Gravatar';
 
 class Badge extends React.Component{
@@ -17,7 +18,10 @@ class Badge extends React.Component{
                 </div>
                 <div className="Badge__section-info">
                     <h3>{this.props.jobTitle}</h3>
-                    <div>@{this.props.twitter}</div>
+                    <a href={"https://twitter.com/"+this.props.twitter} target="_blank">
+                        <img src={twitter_logo} className='twitter_logo' />
+                        <span className='twitter__blue_font'>{this.props.twitter}</span>
+                    </a>
                 </div>
                 <div className="Badge__footer">
                     #platziconf

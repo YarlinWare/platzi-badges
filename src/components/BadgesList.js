@@ -17,9 +17,7 @@ class BadgesListItem extends React.Component {
                     {this.props.badge.jobTitle}
                     <br />
                     <img src={twitter_logo} className='twitter_logo' />
-                    {/*<a href={"https://twitter.com/"+this.props.badge.twitter} target="_blank">*/}
-                        <span className='twitter__blue_font'>{this.props.badge.twitter}</span>
-                    {/*</a>*/}
+                    <span className='twitter__blue_font'>{this.props.badge.twitter}</span>
                 </div>
             </div>
         );
@@ -43,7 +41,7 @@ class BadgesList extends React.Component{
                 {this.props.badges.map((badge)=>{
                     return(
                         <li key={badge.id} className='Badge__section-name-list'>
-                            <Link className="text-reset text-decoration-none" to={`/badges/${badge.id}/edit`}>
+                            <Link className="text-reset text-decoration-none" to={`/badges/${badge.id}`}>
                                 <BadgesListItem badge={badge}/>
                             </Link>
 						</li>
