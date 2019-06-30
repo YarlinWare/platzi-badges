@@ -1,14 +1,29 @@
+.BadgesList ul>li {
+	margin-bottom: 1rem;
+}
+.BadgesListItem {
+	background: #FFFFFF;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);
+	border-radius: 5px;
+	display: flex;
+	padding: 1rem;
+	width: 100%;
+}
+.BadgesListItem__avatar {
+	border-radius: 50%;
+	background: #a3a3a3;
+	margin-right: 0.5rem;
+	width: 80px;
+	height: 80px;
+}
 .twitter_logo {
 	width: 25px;
 	height: 25px;
 }
 .Badge__section-name-list {
-	background: #ffffff;
-	box-shadow: 04px8px0rgba(0, 0, 0, 0.1);
+	box-shadow: 04px 8px 0rgba(0, 0, 0, 0.1);
 	margin-bottom: 1rem;
-	border-radius: 8px8px8px8px;
-	display: flex;
-	padding: 1rem0;
+	border-radius: 8px 8px 8px 8px;
 	width: 100%;
 }
 .Badge__avatar-list {

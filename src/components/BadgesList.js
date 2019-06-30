@@ -6,6 +6,26 @@ import Gravatar from './Gravatar';
 
 import"../components/styles/BadgesList.css";
 
+class BadgesListItem extends React.Component {
+    render() {
+      return (
+            <div className="BadgesListItem">
+                <Gravatar className="Badge__avatar-list" email={this.props.badge.email} />
+                <div>
+                    {this.props.badge.firstName} {this.props.badge.lastName}
+                    <br />
+                    {this.props.badge.jobTitle}
+                    <br />
+                    <img src={twitter_logo} className='twitter_logo' />
+                    {/*<a href={"https://twitter.com/"+this.props.badge.twitter} target="_blank">*/}
+                        <span className='twitter__blue_font'>{this.props.badge.twitter}</span>
+                    {/*</a>*/}
+                </div>
+            </div>
+        );
+    }
+}
+
 class BadgesList extends React.Component{
     render(){
         if(this.props.badges.length===0){
@@ -23,17 +43,9 @@ class BadgesList extends React.Component{
                 {this.props.badges.map((badge)=>{
                     return(
                         <li key={badge.id} className='Badge__section-name-list'>
-                            <Gravatar className="Badge__avatar-list" email={badge.email} />
-							<div>
-								{badge.firstName} {badge.lastName}
-								<br />
-								{badge.jobTitle}
-								<br />
-								<img src={twitter_logo} className='twitter_logo' />
-								<a href={"https://twitter.com/"+badge.twitter}>
-                                    <span className='twitter__blue_font'>{badge.twitter}</span>
-                                </a>
-							</div>
+                            <Link className="text-reset text-decoration-none" to={`/badges/${badge.id}/edit`}>
+                                <BadgesListItem badge={badge}/>
+                            </Link>
 						</li>
                     );
                 })}
