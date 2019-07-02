@@ -60,7 +60,6 @@ class BadgeNew extends React.Component{
                                 email={this.state.form.email || 'EMAIL'}
                                 jobTitle={this.state.form.jobTitle || 'JOB_TITLE'}
                                 twitter={this.state.form.twitter || 'TWITTER'}
-                                avatarUrl="https://i.stack.imgur.com/UWqTW.jpg?s=328&g=1"
                             />
                         </div>
                         <div className="col-6">
