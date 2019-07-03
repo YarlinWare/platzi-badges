@@ -5,7 +5,9 @@ React Course by [Platzi](https://platzi.com/)
 ---------------------------------------------
 
 This a simple project, just following the instruction of the course for learn.<br />
-Source [Course React js](https://platzi.com/clases/react/).
+Source [Course React js](https://platzi.com/clases/react/).<br />
+
+![GIF](https://user-images.githubusercontent.com/48134692/60560085-649d3d80-9d03-11e9-9d24-044b0991d5af.gif)
 
 Deployment
 ----------
