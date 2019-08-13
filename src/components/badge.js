@@ -18,8 +18,8 @@ class Badge extends React.Component{
                 </div>
                 <div className="Badge__section-info">
                     <h3>{this.props.jobTitle}</h3>
-                    <a href={"https://twitter.com/"+this.props.twitter} target="_blank">
-                        <img src={twitter_logo} className='twitter_logo' />
+                    <a href={"https://twitter.com/"+this.props.twitter} target="_blank" rel="noopener noreferrer">
+                        <img src={twitter_logo} className='twitter_logo' alt="Twitter Logo" />
                         <span className='twitter__blue_font'>{this.props.twitter}</span>
                     </a>
                 </div>

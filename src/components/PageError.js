@@ -5,7 +5,7 @@ import './styles/PageError.css';
 function PageError(props) {
   return (
     <div className="PageError">
-        ❌{props.error.message}😱
+        <span>❌{props.error.message}😱</span>
     </div>
   );
 }

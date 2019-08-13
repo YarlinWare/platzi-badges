@@ -1,7 +1,9 @@
 {
   "name": "platzi-badges",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "description": "Simple ReactJS project, following the instructions of the [Course React js](https://platzi.com/clases/react/",
+  "main": "index.js",
   "scripts": {
     "start": "npm-run-all -p client server",
     "client": "react-scripts start",
