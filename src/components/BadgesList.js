@@ -16,7 +16,7 @@ class BadgesListItem extends React.Component {
                     <br />
                     {this.props.badge.jobTitle}
                     <br />
-                    <img src={twitter_logo} className='twitter_logo' />
+                    <img src={twitter_logo} className='twitter_logo' alt="Twitter Logo"/>
                     <span className='twitter__blue_font'>{this.props.badge.twitter}</span>
                 </div>
             </div>
